@@ -21,9 +21,8 @@ RUN apt-get update && apt-get install -y \
 COPY ./gz-citadel/ ${WORKDIR}
 RUN rm -rf .git; \ 
     git init; \
-    # since I'm behind gfw and using proxy.\
     git config --global http.proxy http://127.0.0.1:7890; \
     git config --global https.proxy http://127.0.0.1:7890; \
-    vcs import < ./gazebodistro/collection-citadel.yaml; \
+    vcs import < ./gazebodistro/collection-citadel.yaml; 
 
 

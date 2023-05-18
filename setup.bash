@@ -8,7 +8,7 @@ update_submodule() {
  
 setup_docker_img() {
     echo "setting up gz citadel image"
-    docker build  --progress=plain --network host -t gz-citadel-img -f ./docker/Dockerfile .
+    docker build --progress=plain --network host -t gz-citadel-img -f ./docker/Dockerfile .
 }
 
 run_container() {
