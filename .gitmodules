@@ -1,0 +1,3 @@
+[submodule "gz-citadel"]
+	path = gz-citadel
+	url = https://github.com/gazebosim/gz-citadel.git
