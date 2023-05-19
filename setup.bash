@@ -20,6 +20,7 @@ run_container() {
         docker rm -f gz-citadel-container
         docker run -it \
                    --name gz-citadel-container \
+                   -v .:/home/code/ \
                    --network host \
                    gz-citadel-img \
                    /bin/bash

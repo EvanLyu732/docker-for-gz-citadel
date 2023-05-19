@@ -4,7 +4,7 @@ USER root
 EXPOSE 7890
 EXPOSE 7891
 
-WORKDIR /home/gz-citadel/
+WORKDIR /home/code/
 RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list; \
     echo "source /opt/ros/noetic/setup.bash --extend" >> /root/.bashrc
 RUN gpg --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654; \
