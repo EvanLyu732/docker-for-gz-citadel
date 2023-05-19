@@ -14,6 +14,7 @@ gz-citadel with ros1 noetic
 
 Dependencies graph for every ign component with ign prefix package.
 
+```txt 
 ign-cmake2;
     none
 
@@ -105,3 +106,7 @@ ign-gazebo:
     > ign-rendering3
     > ign-math6
     > ign-tools
+
+
+```
+
